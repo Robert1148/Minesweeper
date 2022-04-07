@@ -102,3 +102,39 @@ function minendichte(einfacherSchwierigkeitsgrad, mittlererSchwierigkeitsgrad, h
         } while (m < hoehe * 6);
     }
 }
+
+
+//Highscoreliste nach Schwierigkeitsmodi sortiert
+var Zeit = [];
+var AnzahlVersuche = [];
+function Highscoreliste(HighscorelisteEinfacherSchwierigkeitsgrad, HighscorelisteMittlererSchwierigkeitsgrad, HighscorelisteHoherSchwierigkeitsgrad) {
+    function HighscorelisteEinfacherSchwierigkeitsgrad(Zustand, Zeit) {
+        var HighscorelisteEinfacherSchwierigkeitsgrad = document.getElementsByName(einfacherSchwierigkeitsgrad)
+        let a = 1;
+        while (a<AnzahlVersuche) {
+            console.log("Du bist auf dem" + a +". Platz! (einfacher Schwierigkeitsgrad)" );
+            a++;
+        }
+    }
+    function HighscorelisteMittlererSchwierigkeitsgrad(Zustand, Zeit) {
+        var HighscorelisteMittlererSchwierigkeitsgrad = document.getElementsByName(mittlererSchwierigkeitsgrad)
+        let b = 1;
+        while (b<AnzahlVersuche) {
+            console.log("Du bist auf dem" + b +". Platz! (einfacher Schwierigkeitsgrad)" );
+            b++;
+        }
+    }
+    function HighscorelisteHoherSchwierigkeitsgrad(Zustand, Zeit) {
+        var HighscorelisteHoherSchwierigkeitsgrad = document.getElementsByName(hoherSchwierigkeitsgrad)
+        let c = 1;
+        while (c<AnzahlVersuche) {
+            console.log("Du bist auf dem" + c +". Platz! (einfacher Schwierigkeitsgrad)" );
+            c++;
+        }
+    }
+
+
+
+    //Zu deklarieren: Zeit, AnzahlVersuche bzw. durchläufe
+    //Stoppuhr programmieren
+}
